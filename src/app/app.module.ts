@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OlaAngularComponent } from './ola-angular/ola-angular.component';
-import { OlaAngularCliComponent } from './ola-angular-cli/ola-angular-cli.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   declarations: [
-    OlaAngularComponent,
     AppComponent,
-    OlaAngularCliComponent
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
