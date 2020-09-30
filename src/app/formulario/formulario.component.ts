@@ -14,4 +14,13 @@ import { Component } from '@angular/core';
   `],
   styleUrls: ['./formulario.component.scss']
 })
-export class FormularioComponent {}
+export class FormularioComponent {
+  obterEstilosParaBotao() {
+    return{
+      backgroundColor: '#EEE6FF',
+      padding: '8px',
+      width: '20%',
+      border: 'none',
+      borderRadius: '4px'
+  }};
+}
