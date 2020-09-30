@@ -7,3 +7,5 @@ Aula06 sobre uso de CSS nos componentes Angular como:
 - propriedade styles dentro da classe diretamente
 - inline pelo template usando \[ngStyle\] com dataBinding
 - através de uma função na classe chamada pelo template
+- através do \[ngClass\] com dataBinding, executando um método da Classe
+- com esse metódo geramos classes diferentes em determinadas situações
