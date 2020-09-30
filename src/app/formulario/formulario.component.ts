@@ -16,8 +16,20 @@ import { Component } from '@angular/core';
 })
 export class FormularioComponent {
   valor;
+  color = '#e2fcee';
+
   gerarValor(){
     this.valor = Math.round(Math.random() * 100) + 1;
+  }
+
+  mudaCorPicker() {
+    return {
+      width: '100px',
+      height: '20px',
+      borderRadius: '8px',
+      backgroundColor: this.color,
+      color: '#888'
+    }
   }
 
   obterClasseValor() {
@@ -30,7 +42,7 @@ export class FormularioComponent {
     return{
       backgroundColor: '#EEE6FF',
       padding: '8px',
-      width: '20vw',
+      width: '100px',
       border: 'none',
       borderRadius: '4px'
     };

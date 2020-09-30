@@ -7,12 +7,28 @@
       Há diferentes formas para se aplicar estilos com mecanismos do Angular
     </div>
   </article>
-  <div [ngClass]="obterClasseValor()">
-    {{valor}}
-  </div>
-  <div [ngStyle]="{'margin-top': '4px'}">
-    <button [ngStyle]="obterEstilosParaBotao()" (click)=gerarValor()>OK</button>
-  </div>
+  <main>
+    <input
+      type="color"
+      class="color-picker"
+      [value]="color"
+      (input)="color=$event.target.value"
+    >
+    <div [ngStyle]="mudaCorPicker()">
+      {{color}}
+    </div>
+    <div [ngClass]="obterClasseValor()">
+      {{valor}}
+    </div>
+    <div [ngStyle]="{'margin-top': '4px'}">
+      <button
+        [ngStyle]="obterEstilosParaBotao()"
+        (click)=gerarValor()
+      >
+        OK
+      </button>
+    </div>
+  </main>
   <footer [ngClass]="obterClasseRodape()">
     Angular. 2020. Google Inc.
   </footer>
